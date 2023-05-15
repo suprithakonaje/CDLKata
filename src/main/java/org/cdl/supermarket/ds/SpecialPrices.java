@@ -20,5 +20,13 @@ public class SpecialPrices {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "SpecialPrices{" +
+                "quantity=" + quantity +
+                ", price=" + price +
+                '}';
+    }
 }
 

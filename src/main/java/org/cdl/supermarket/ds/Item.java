@@ -40,4 +40,13 @@ public class Item {
     public void clearQuantity() {
         quantity = 0;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "name=" + name +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                '}';
+    }
 }

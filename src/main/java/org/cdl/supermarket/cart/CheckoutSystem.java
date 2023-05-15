@@ -18,7 +18,7 @@ public class CheckoutSystem {
     private static Map<Character, SpecialPrices> specialPricesMap;
     private static double receiptTotal = 0.0;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         characterItemMap = SKU.getCharacterItemMap();
         specialPricesMap = PricingRules.getCharacterSpecialPricesMap();
@@ -37,7 +37,15 @@ public class CheckoutSystem {
         }
 
         receiptTotal = receipt.getFinalTotal();
-        System.out.println("Total: £" + receipt.getFinalTotal());
+        if (receiptTotal > 0.0){
+            System.out.println("Total: £" + receiptTotal);
+            System.out.println("Please proceed to pay....");
+            Thread.sleep(1000);
+            System.out.println("\nThank you for shopping");
+        } else {
+            System.out.println("\nThank you for your time with us");
+        }
+        System.out.println("See you next time! Have a good day ahead");
 
     }
 
