@@ -43,9 +43,10 @@ public class Receipt {
                 }
             }
             System.out.println("Running total: £" + runningTotal / 100);
+            System.out.println("Scan next item or press 'q' to finish shopping");
         } catch (Exception e) {
             System.err.println("Item not in stock, contact nearby sales assistant");
-            System.exit(0);
+            System.err.println("Scan next item or press 'q' to quit: ");
         }
 
     }
