@@ -20,16 +20,16 @@ To start the checkout process, run the main method in the CheckoutSystem class. 
 ### CheckoutSystem
 This is the main class of the program that handles the checkout process. It takes two arguments, a map of item prices and a map of special prices based on quantity for that particular item. It contains the main method which runs the program, prompting the user to scan items and displaying the final total of the purchase.
 
-###Item
+### Item
 This is a data structure for an item in the supermarket. It contains the item's name, price, and quantity.
 
-###SpecialPrices
+### SpecialPrices
 This is a data structure for special prices based on quantity for a particular item in the supermarket. It contains the quantity and price for the special offer.
 
-###Receipt
+### Receipt
 This is a utility class for generating an on-screen receipt for each item that is scanned, and returning the running total and final total of the purchase.
 
-###PricingRules
+### PricingRules
 This class contains pre-defined pricing rules for items in the supermarket, which can be updated for checkout transactions. It returns a map of item name and special price based on quantity for that particular item.
 
 ## Test Class
